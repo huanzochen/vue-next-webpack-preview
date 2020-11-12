@@ -1,5 +1,12 @@
 <template>
-  <img src="./logo.png">
+  <div id='root'>
+    <img src='./logo.png' />
+    <div id='nav'>
+      <router-link to='/'> Home</router-link>
+      <router-link to='/contact'>Contact </router-link>
+    </div>
+    <router-view />
+  </div>
   <h1>Hello Vue 3!</h1>
   <button @click="inc">Clicked {{ count }} times.</button>
 </template>
